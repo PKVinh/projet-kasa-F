@@ -1,0 +1,21 @@
+:root {
+  --main-color: #FF6060;
+  --main-bg-color: #F6F6F6;
+  --main-img-color: #000000;  
+  --main-img-text-color: #FFFFFF;  
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;  
+}
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 1240px;  /* Limite la largeur à 1440px */
+  margin: 0 auto;  /* Centre le contenu dans la page */
+}
