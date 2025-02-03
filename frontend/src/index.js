@@ -7,7 +7,8 @@ import Home from "./pages/Home";
 import Accommodation from "./pages/Accommodation";
 import Error404 from "./pages/Error404";
 import About from "./pages/About";
-import "./styles/global.css"
+import "./styles/global.css"; // Importation du fichier global.css
+
 
 const rootElement = document.getElementById('root'); // Votre conteneur HTML
 const root = ReactDOM.createRoot(rootElement);
@@ -15,6 +16,7 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <Router>
+      <div className="container"> 
       <Header />
 
         <Routes>
@@ -24,6 +26,7 @@ root.render(
           <Route path="/about" element={<About />} />
         </Routes>
 
+      </div>
       <Footer />
     </Router>  
     </React.StrictMode>,

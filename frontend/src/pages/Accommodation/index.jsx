@@ -1,6 +1,8 @@
 function Accomodation() {
   return (
-      <h1>Accomodation</h1>
+      <main>
+        Accomodation
+      </main>
   );
 }
 

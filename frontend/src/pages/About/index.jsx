@@ -1,9 +1,11 @@
+import Banner from "../../components/Banner"
+
 function About() {
     return (
-        <div>
-            <h1>About 🧮</h1>
-        </div>
-    )
+        <main>
+            <Banner />
+        </main>
+    );
 }
 
-export default About
+export default About;
