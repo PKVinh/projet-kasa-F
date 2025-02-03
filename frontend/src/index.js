@@ -9,8 +9,7 @@ import Error404 from "./pages/Error404";
 import About from "./pages/About";
 import "./styles/global.css"
 
-
-const rootElement = document.getElementById('root'); 
+const rootElement = document.getElementById('root'); // Votre conteneur HTML
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
