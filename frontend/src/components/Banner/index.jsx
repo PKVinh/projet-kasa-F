@@ -1,11 +1,10 @@
-import banner from "../../styles/assets/home_banner.png"
 import styles from "../../styles/Banner.module.css"
 
-function Banner() {
+function Banner({image, title}) {
     return (
       <section className={styles.banner_container}>
-        <img src={banner} alt="home-banner"></img>
-        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={image} alt="home-banner"></img>
+        {title && <h1>{title}</h1>}
       </section>
     )
   }
