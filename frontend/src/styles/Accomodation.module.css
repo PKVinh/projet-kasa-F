@@ -1,0 +1,117 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Info logement*/
+.title h2 {
+    color: var(--main-color);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.title p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.tags_container {
+    display: flex;
+    gap: 25px;
+}
+
+/*Info host*/
+.host_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.host_info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.host_name {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 18px;
+    flex-direction: column; /* Affiche Prénom et Nom en colonne */
+    text-align: right;
+}
+
+.host_name p {
+    margin: 0; /* Supprime les marges par défaut */
+    line-height: 1.7; /* Ajuste l'espacement vertical */
+}
+
+.host_container img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+
+.ratingContainer {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.ratingContainer i {
+    font-size: 24px;
+}
+
+.starred {
+    color: var(--main-color) !important;
+}
+  
+.stargray {
+    color: #dcdcdc !important; 
+}
+
+/*Info menu déroulant*/
+.collpase_container {
+    display: flex;
+    gap: 75px;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media screen and (min-width: 330px) and (max-width: 768px) {
+
+    section{
+        padding: 40px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .host_container {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .collpase_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+    }
+
+} 

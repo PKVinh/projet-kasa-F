@@ -1,0 +1,49 @@
+.slideshow {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative; /* Le parent des chevrons */
+    width: 100%; /* Largeur du slider */
+    max-width: 1240px; /* Largeur fixe si nécessaire */
+    margin: auto; /* Centré si besoin */
+    overflow: hidden; /* Empêche les éléments de dépasser */
+  }
+  
+.slideshowImage {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover; /* Ajuste l'image pour remplir l'espace */
+    border-radius: 10px;
+    overflow: hidden;
+} 
+
+.chevron {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    padding: 15px;
+    border: none;
+}
+  
+.chevronLeft {
+    left: 10px;
+}
+  
+.chevronRight {
+    right: 10px;
+}
+
+.indexText {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    z-index: 2;
+}
