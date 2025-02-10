@@ -1,0 +1,70 @@
+.collapseContainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.collapse {
+    width: 1023px;
+    overflow: hidden; /* Empêche le débordement */
+    margin: 15px 0; /* Espacement entre les collapses */
+    border: 1px solid #ddd; /* Bordure discrète */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+.collapseHeader {
+    background-color: var(--main-color);
+    color: var(--main-img-text-color);
+    padding: 15px 20px; /* Espacement interne */
+    display: flex; /* Mise en page en flexbox */
+    justify-content: space-between; /* Écart entre le titre et la flèche */
+    align-items: center; /* Centrage vertical */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Curseur "clic" */
+}
+  
+.collapseHeader h2 {
+    margin: 0;
+}
+  
+.arrow {
+    font-size: 20px; /* Taille de la flèche */
+    color: white; /* Couleur blanche pour s'accorder avec l'en-tête */
+    transition: transform 0.3s ease; /* Animation fluide pour le changement d'icône */
+    margin-left: 10px; /* Espacement entre le texte et l'icône */
+}
+  
+.arrowOpen {
+    transform: rotate(180deg); /* Rotation de 180° pour indiquer l'ouverture */
+}
+  
+.collapseContent {
+    background-color: var(--main-bg-color);
+    color: #333;
+    font-size: 16px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne pour lisibilité */
+    max-height: 0; /* Commence fermé */
+    padding: 0 20px; /* Enlève les marges internes quand fermé */
+    overflow: hidden; /* Cache le contenu quand fermé */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Animation fluide */
+}  
+
+.openContent {
+    display: block;
+    max-height: 500px; /* Ajuste cette valeur selon la hauteur maximale du contenu */
+    padding: 10px 20px; /* Ajoute des marges internes quand ouvert */
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media screen and (min-width: 330px) and (max-width: 768px) {
+    .collapse {
+        width: 100%;
+    }
+
+}
