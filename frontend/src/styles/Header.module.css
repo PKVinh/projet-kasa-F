@@ -17,6 +17,14 @@
     margin-left: 50px;
 }
 
+.activeLink {
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
 
