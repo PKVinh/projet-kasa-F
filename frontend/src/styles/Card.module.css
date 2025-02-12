@@ -49,20 +49,40 @@
 }
 
 /****** Media queries ***********/
+
+/* Medium devices (table, less than 1024px) */
+
+@media screen and (max-width: 1024px) {
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les cartes */
+    margin: 20px 0;
+    padding: 0;
+    background-color: white;
+}
+}
+
 /* Small devices (phones, less than 768px) */
 
 @media screen and (min-width: 330px) and (max-width: 768px) {
   .cardsContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacement entre les cartes */
-    margin: 20px 0;
-    padding: 0;
-    background-color: white;
+    width: 95%;
+    max-width: none;
   }
 
   .card {
     height: 255px;
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    object-fit: cover;
   }
 
 } 

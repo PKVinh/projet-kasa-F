@@ -16,12 +16,23 @@ function Slideshow({pictures}) {
 
   return (
     <div className={styles.slideshow}>
-      <i className={`fa-solid fa-chevron-left ${styles.chevron} ${styles.chevronLeft}`} onClick={previousSlide}> </i>
+
+      {pictures.length > 1 && (
+        <i className={`fa-solid fa-chevron-left ${styles.chevron} ${styles.chevronLeft}`} onClick={previousSlide}> </i>
+      )}
+
       <img src={pictures[index]} 
-      alt={`Slide ${index + 1}`}
-      className={styles.slideshowImage}/>
-      <span className={styles.indexText}>{index + 1} / {pictures.length}</span>
-      <i className={`fa-solid fa-chevron-right ${styles.chevron} ${styles.chevronRight}`} onClick={nextSlide}> </i>
+        alt={`Slide ${index + 1}`}
+        className={styles.slideshowImage}/>
+      
+      {pictures.length > 1 && (
+        <span className={styles.indexText}>{index + 1} / {pictures.length}</span>
+      )}
+
+      {pictures.length > 1 && (
+        <i className={`fa-solid fa-chevron-right ${styles.chevron} ${styles.chevronRight}`} onClick={nextSlide}> </i>
+      )}
+
     </div>
   );
 };

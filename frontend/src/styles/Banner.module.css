@@ -38,12 +38,22 @@
   
 
 /****** Media queries ***********/
+
+/* Medium devices (table, less than 1024px) */
+
+@media screen and (max-width: 1024px) {
+
+.banner_container {
+    width: 100%;
+    }
+}
+
 /* Small devices (phones, less than 768px) */
 
 @media screen and (min-width: 330px) and (max-width: 768px) {
 
     .banner_container {
-        width: 100%;
+        width: 95%;
         height: 110px;
         margin: 20px 0;
     }

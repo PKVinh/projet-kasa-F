@@ -7,7 +7,7 @@
 
 
 .collapse {
-    width: 1023px;
+    width: 90%;
     overflow: hidden; /* Empêche le débordement */
     margin: 15px 0; /* Espacement entre les collapses */
     border: 1px solid #ddd; /* Bordure discrète */
@@ -60,9 +60,21 @@
 }
 
 /****** Media queries ***********/
+/* Medium devices (table, less than 1024px) */
+
+@media screen and (max-width: 1024px) {
+    .collapse  {
+        width: 100%;
+    }
+}
+
 /* Small devices (phones, less than 768px) */
 
 @media screen and (min-width: 330px) and (max-width: 768px) {
+    .collapseContainer  {
+        width: 95%;
+    }
+    
     .collapse {
         width: 100%;
     }

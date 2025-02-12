@@ -5,17 +5,45 @@
   --main-img-text-color: #FFFFFF;  
 }
 
-.body {
+/* .body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;  
+  overflow-x: hidden;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Évite le scroll horizontal */
 }
+
 
 .container {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   max-width: 1240px;  /* Limite la largeur à 1440px */
   margin: 0 auto;  /* Centre le contenu dans la page */
+}
+
+/****** Media queries ***********/
+
+/* Medium devices (table, less than 1024px) */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%; /* Ajuste la largeur pour les tablettes */
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    max-width: 100%; /* Pour mobiles */
+    padding: 0 10px; /* Ajoute un peu de padding pour éviter que le contenu touche les bords */
+  }
+
 }

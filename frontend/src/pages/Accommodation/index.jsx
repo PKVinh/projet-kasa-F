@@ -40,7 +40,7 @@ const Accommodation = () => {
     };
 
     fetchData();
-  }, [id]);
+  }, [id, navigate]);
 
   // Si les données sont encore en cours de chargement
   if (!accomodation && !error) {
@@ -51,7 +51,7 @@ const Accommodation = () => {
 
   // Si tout va bien, affiche les données
   return (
-    <section>
+    <section className={styles.sectionAcommodation}>
       <Slideshow pictures={accomodation.pictures}/>
 
       <div className={styles.info}>

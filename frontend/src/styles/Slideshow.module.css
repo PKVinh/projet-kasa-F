@@ -1,7 +1,4 @@
 .slideshow {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     position: relative; /* Le parent des chevrons */
     width: 100%; /* Largeur du slider */
     max-width: 1240px; /* Largeur fixe si nécessaire */
@@ -47,3 +44,23 @@
     color: white;
     z-index: 2;
 }
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media screen and (min-width: 330px) and (max-width: 768px) {
+    .slideshowImage {
+        width: 100%;
+    }
+    
+    .chevron {
+      font-size: 40px;
+      }
+  
+    .indexText {
+      display: none;
+    }
+  
+  
+  }
+  
