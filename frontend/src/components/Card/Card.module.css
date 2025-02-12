@@ -1,14 +1,3 @@
-.cardsContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
-  gap: 50px; /* Espacement entre les cartes */
-  justify-items: center;
-  padding: 50px;
-  background-color: var(--main-bg-color);
-  border-radius: 25px;
-  margin: 50px 0;
-}
-
 .card {
   position: relative;
   width: 340px;
@@ -49,32 +38,9 @@
 }
 
 /****** Media queries ***********/
-
-/* Medium devices (table, less than 1024px) */
-
-@media screen and (max-width: 1024px) {
-
-.cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espacement entre les cartes */
-    margin: 20px 0;
-    padding: 0;
-    background-color: white;
-}
-}
-
 /* Small devices (phones, less than 768px) */
 
 @media screen and (min-width: 330px) and (max-width: 768px) {
-  .cardsContainer {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    max-width: none;
-  }
-
   .card {
     height: 255px;
     width: 100%;

@@ -1,11 +1,3 @@
-.collapseContainer  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-
 .collapse {
     width: 90%;
     overflow: hidden; /* Empêche le débordement */
@@ -60,9 +52,9 @@
 }
 
 /****** Media queries ***********/
-/* Medium devices (table, less than 1024px) */
+/* Medium devices (table, less than 1240px) */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
     .collapse  {
         width: 100%;
     }
@@ -70,11 +62,7 @@
 
 /* Small devices (phones, less than 768px) */
 
-@media screen and (min-width: 330px) and (max-width: 768px) {
-    .collapseContainer  {
-        width: 95%;
-    }
-    
+@media screen and (min-width: 330px) and (max-width: 768px) {    
     .collapse {
         width: 100%;
     }

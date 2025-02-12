@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Collapse from "../../components/Collapse"
 import Slideshow from '../../components/Slideshow';
 import Tag from "../../components/Tag";
-import styles from "../../styles/Accomodation.module.css";
+import styles from "./Accomodation.module.css";
 
 
 const Accommodation = () => {

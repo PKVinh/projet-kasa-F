@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../styles/Collapse.module.css"
+import styles from "./Collapse.module.css"
 
 const Collapse = ({ title, children }) => {
   // État pour savoir si le collapse est ouvert

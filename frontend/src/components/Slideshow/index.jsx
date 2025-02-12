@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../styles/Slideshow.module.css"
+import styles from "./Slideshow.module.css"
 
 function Slideshow({pictures}) {
 

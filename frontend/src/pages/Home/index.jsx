@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import bannerHome from "../../styles/assets/home_banner.png"
 import Banner from "../../components/Banner"
 import Card from "../../components/Card"
-import styles from "../../styles/Card.module.css"
+import styles from "./home.module.css"
 
 function Home() {
     const [accommodations, setAccomodations] = useState([])

@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner"
 import bannerAbout from "../../styles/assets/about-banner.png"
-import Collapse from "../../components/Collapse"
-import styles from "../../styles/Collapse.module.css"
+import Collapse  from "../../components/Collapse"
+import styles from "./about.module.css"
 
 
 function About() {

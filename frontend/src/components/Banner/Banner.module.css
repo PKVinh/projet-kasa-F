@@ -39,9 +39,9 @@
 
 /****** Media queries ***********/
 
-/* Medium devices (table, less than 1024px) */
+/* Medium devices (table, less than 1240px) */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
 
 .banner_container {
     width: 100%;

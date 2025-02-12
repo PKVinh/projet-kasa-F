@@ -1,10 +1,9 @@
 .slideshow {
     position: relative; /* Le parent des chevrons */
     width: 100%; /* Largeur du slider */
-    max-width: 1240px; /* Largeur fixe si nécessaire */
     margin: auto; /* Centré si besoin */
     overflow: hidden; /* Empêche les éléments de dépasser */
-  }
+}
   
 .slideshowImage {
     width: 1240px;
@@ -46,6 +45,14 @@
 }
 
 /****** Media queries ***********/
+/* Medium devices (table, less than 1240px) */
+
+@media (max-width: 1240px) {
+  .slideshowImage {
+    width: 100%;
+  } 
+}
+
 /* Small devices (phones, less than 768px) */
 
 @media screen and (min-width: 330px) and (max-width: 768px) {

@@ -1,0 +1,15 @@
+.collapseContainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+
+@media screen and (min-width: 330px) and (max-width: 768px) {
+    .collapseContainer  {
+        width: 95%;
+    }
+}

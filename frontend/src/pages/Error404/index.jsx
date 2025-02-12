@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom' 
-import styles from "../../styles/Error404.module.css"
+import styles from "./Error404.module.css"
 import error_banner from "../../styles/assets/404.png"
 
 function Error404() {

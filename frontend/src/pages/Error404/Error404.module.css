@@ -18,11 +18,21 @@
 }
 
 /****** Media queries ***********/
+/* Medium devices (table, less than 1240px) */
+
+@media screen and (max-width: 1240px) {
+    .error_container h2 {
+        font-size: 24px;
+    }
+}
+
+
 /* Small devices (phones, less than 768px) */
 
 @media screen and (min-width: 330px) and (max-width: 768px) {
     .error_container {
         display: flex;
+        width: 95%;
     }
     
     .error_container img{

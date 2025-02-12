@@ -1,4 +1,4 @@
-import styles from "../../styles/Tag.module.css"
+import styles from "./Tag.module.css"
 
 function Tag({text}) {
     return (
