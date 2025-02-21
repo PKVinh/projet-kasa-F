@@ -18,7 +18,12 @@ function Slideshow({pictures}) {
     <div className={styles.slideshow}>
 
       {pictures.length > 1 && (
-        <i className={`fa-solid fa-chevron-left ${styles.chevron} ${styles.chevronLeft}`} onClick={previousSlide}> </i>
+        <i 
+          className={`fa-solid fa-chevron-left ${styles.chevron} ${styles.chevronLeft}`} 
+          onClick={previousSlide}
+          aria-label="chevron-left"
+          role="button"> 
+        </i>
       )}
 
       <img src={pictures[index]} 
@@ -30,7 +35,12 @@ function Slideshow({pictures}) {
       )}
 
       {pictures.length > 1 && (
-        <i className={`fa-solid fa-chevron-right ${styles.chevron} ${styles.chevronRight}`} onClick={nextSlide}> </i>
+        <i 
+          className={`fa-solid fa-chevron-right ${styles.chevron} ${styles.chevronRight}`} 
+          onClick={nextSlide}
+          aria-label="chevron-right"
+          role="button"> 
+        </i>
       )}
 
     </div>
