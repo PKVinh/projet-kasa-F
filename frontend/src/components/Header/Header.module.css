@@ -6,13 +6,13 @@
 }
 
 .header img{
-    width: 12%;
+    width: 18%;
 }
 
 .link{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     margin-left: 50px;
 }
@@ -20,7 +20,7 @@
 .activeLink {
     text-decoration: underline;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     margin-left: 50px;
 }
@@ -35,9 +35,10 @@
     }
     
     .link, .activeLink{
-        font-size: 16px;
+        font-size: 12px;
         margin-left: 25px;
         font-weight: 500;
+        line-height: 17px;
         text-transform: uppercase;
     }
     

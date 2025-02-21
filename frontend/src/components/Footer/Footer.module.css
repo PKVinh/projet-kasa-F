@@ -16,6 +16,7 @@
     color: var(--main-img-text-color);
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
+    font-weight: 400;
 }
 
 /****** Media queries ***********/
@@ -23,13 +24,15 @@
 
 @media screen and (min-width: 330px) and (max-width: 768px) {
     .img {
-        width: 30%;
+        width: 40%;
         padding: 10px;
     }
     
     .p {
+        width: 35%;
         color: var(--main-img-text-color);
-        font-family: "Montserrat", sans-serif;
         font-size: 16px;
+        line-height: 17px;
+        text-align: center;
     }
 }

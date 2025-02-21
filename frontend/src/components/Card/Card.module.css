@@ -2,7 +2,7 @@
   position: relative;
   width: 340px;
   height: 340px;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
 }
@@ -28,8 +28,9 @@
   bottom: -5px;
   left: 15px;
   color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
   z-index: 1;
 }
   

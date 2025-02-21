@@ -8,7 +8,7 @@
     margin: 50px 0;
 }
 
-.error_container h2 {
+.error_container p {
     font-size: 36px;
 }
 
@@ -21,7 +21,7 @@
 /* Medium devices (table, less than 1240px) */
 
 @media screen and (max-width: 1240px) {
-    .error_container h2 {
+    .error_container p {
         font-size: 24px;
     }
 }
@@ -39,7 +39,7 @@
         width: 50%;
     }
 
-    .error_container h2 {
+    .error_container p {
         font-size: 18px;
         text-align: center;
     }
