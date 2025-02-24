@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import Collapse from "./index.jsx";
+import Collapse from "../components/Collapse/index.jsx";
 
 describe("Collapse Component", () => {
   test("renders with a title", () => {

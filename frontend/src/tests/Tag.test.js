@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Tag from "./index.jsx";
+import Tag from "../components/Tag/index.jsx";
 
 describe("Tag component", () => {
     test("should display the correct text", () => {

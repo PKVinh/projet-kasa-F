@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
-import Header from "./index.jsx";
+import Header from "../components/Header/index.jsx";
 
-jest.mock("../../styles/assets/LOGO-main.png", () => "mock-logo.png");
+jest.mock("../styles/assets/LOGO-main.png", () => "mock-logo.png");
 
 describe("Header component", () => {
   test("should display the logo", () => {

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Banner from "./index.jsx";
+import Banner from "../components/Banner/index.jsx";
 
 describe("Banner", () => {
   test("renders with image and title", () => {

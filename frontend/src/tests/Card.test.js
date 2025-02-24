@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider, MemoryRouter } from "react-router";
-import Card from "./index.jsx";
+import Card from "../components/Card/index.jsx";
 
 describe("Card component", () => {
   const cardProps = {

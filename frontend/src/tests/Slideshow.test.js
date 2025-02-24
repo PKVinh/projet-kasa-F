@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import Slideshow from "./index.jsx";
+import Slideshow from "../components/Slideshow/index.jsx";
 
 const pictures = ["img1.jpg", "img2.jpg", "img3.jpg"];
 
